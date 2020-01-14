@@ -9,7 +9,7 @@ def home(request):
     import json
     import requests
 
-    api_request = requests.get("http://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=89129&distance=5&API_KEY=EF02C6A5-A70D-4161-89E4-14F219CFC0B3")
+    api_request = requests.get("http://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=89129&distance=5&API_KEY=replace the key")
     
     try:
         api = json.loads(api_request.content)
